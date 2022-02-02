@@ -1,0 +1,35 @@
+{
+  "name": "aws-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "nodemon main.js -e html,js,css --ignore public",
+    "build": "webpack",
+    "build-watch": "webpack -w",
+    "start": "npm run build-watch & npm run start-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "nodemon": "^2.0.15",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.68.0",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1066.0",
+    "axios": "^0.25.0",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "webpack-cli": "^4.9.2"
+  }
+}
